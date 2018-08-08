@@ -10,7 +10,11 @@
           <el-menu-item index="2-1"><a href="/oneLevelAddrDetail" class="nav-item">具体某天交易量</a></el-menu-item>
           <el-menu-item index="2-2"><a href="/" class="nav-item">历史交易量排名</a></el-menu-item>
         </el-submenu>
-        <el-menu-item index="3"><a href="/marketDetail" class="nav-item">交易所交易详情</a></el-menu-item>
+        <el-submenu index="3">
+          <template slot="title">交易所</template>
+          <el-menu-item index="3-1"><a href="/marketDetail" class="nav-item">交易所一天交易量</a></el-menu-item>
+          <el-menu-item index="3-2"><a href="/marketHistoryValue" class="nav-item">交易所历史交易量</a></el-menu-item>
+        </el-submenu>
       </el-menu>
     </div>
     <div class="line"></div>
