@@ -5,6 +5,7 @@ import OneLevelAddrDetail from "@/components/OneLevelAddrDetail"
 import MarketDetail from "@/components/MarketDetail"
 import MarketHistoryValue from "@/components/MarketHistoryValue"
 import AccountDetail from "@/components/AccountDetail"
+import MarketEveryDayValue from "@/components/MarketEveryDayValue"
 
 Vue.use(Router)
 
@@ -31,6 +32,10 @@ export default new Router({
       path: "/accountDetail",
       name: AccountDetail,
       component: AccountDetail
+    }, {
+      path: "/marketDetailEveryDay",
+      name: "MarketDetailEveryDay",
+      component: MarketEveryDayValue
     }
   ]
 })

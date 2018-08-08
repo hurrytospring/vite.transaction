@@ -4,9 +4,14 @@
     <Header></Header>
     <br>
     <div class="container-label">
-      <label>查询特定账户</label>
-      <input type="text" id="condition" class="label-query" placeholder="0xf7793d27a1b76cdf14db7c83e82c772cf7c92910" v-model="account">
-      <label>历史每天交易量详情</label>
+      <label>查询特定交易所历史每天交易量详情</label>
+      <el-select v-model="account" placeholder="请选择">
+        <el-option v-for="item in options"
+        :key="item.value"
+        :label="item.label"
+        :value="item.value">
+        </el-option>
+      </el-select>
       <button class="btn btn-lg btn-primary btn-block" type="submit" @click="queryDetail">Query</button>
       <button class="btn btn-lg btn-primary btn-block" type="submit" @click="export2Excel">Export</button>
     </div>
@@ -37,11 +42,24 @@ import {exportJsonToExcel} from "../vendor/Export2Excel"
 import Header from "./Header"
 // import "json"
 export default {
-  name: "AccountDetail",
+  name: "MarketEveryDayValue",
   data () {
     return {
       // topic: "欢迎使用交易聚合系统",
       accountDetail: [],
+      options: [{
+        value: "0xf7793d27a1b76cdf14db7c83e82c772cf7c92910",
+        label: "Bilaxy"
+      }, {
+        value: "0xb9ee1e551f538a464e8f8c41e9904498505b49b0",
+        label: "Coinex"
+      }, {
+        value: "0x2a0c0dbecc7e4d658f48e01e3fa353f44050c208",
+        label: "Idex"
+      }, {
+        value: "0x6cc5f688a315f3dc28a7781717a9a798a59fda7b",
+        label: "Okex"
+      }],
       account: ""
     }
   },
@@ -65,6 +83,7 @@ export default {
     },
     queryDetail: function () {
       let self = this
+      console.log(this.account)
       this.accountDetail = []
       get("/accountDetail", {Address: self.account}).then((addrListDetail) => {
         self.strHandle(addrListDetail)

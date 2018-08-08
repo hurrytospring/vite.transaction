@@ -3,7 +3,7 @@
 import Vue from "vue"
 import App from "./App"
 import router from "./router"
-import { Menu, Submenu, MenuItem } from "element-ui"
+import { Menu, Submenu, MenuItem, Select, Option } from "element-ui"
 import "element-ui/lib/theme-chalk/index.css"
 
 Vue.config.productionTip = false
@@ -11,6 +11,8 @@ Vue.config.productionTip = false
 Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItem)
+Vue.use(Select)
+Vue.use(Option)
 
 /* eslint-disable no-new */
 new Vue({
