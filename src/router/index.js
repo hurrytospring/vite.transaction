@@ -4,6 +4,7 @@ import Transaction from "@/components/Transaction"
 import OneLevelAddrDetail from "@/components/OneLevelAddrDetail"
 import MarketDetail from "@/components/MarketDetail"
 import MarketHistoryValue from "@/components/MarketHistoryValue"
+import AccountDetail from "@/components/AccountDetail"
 
 Vue.use(Router)
 
@@ -26,6 +27,10 @@ export default new Router({
       path: "/marketHistoryValue",
       name: "MarketHistoryValue",
       component: MarketHistoryValue
+    }, {
+      path: "/accountDetail",
+      name: AccountDetail,
+      component: AccountDetail
     }
   ]
 })

@@ -15,6 +15,7 @@
           <el-menu-item index="3-1"><a href="/marketDetail" class="nav-item">交易所一天交易量</a></el-menu-item>
           <el-menu-item index="3-2"><a href="/marketHistoryValue" class="nav-item">交易所历史交易量</a></el-menu-item>
         </el-submenu>
+        <el-menu-item index="4"><a href="/accountDetail" class="nav-item">账户历史交易详情</a></el-menu-item>
       </el-menu>
     </div>
     <div class="line"></div>
