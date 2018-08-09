@@ -17,6 +17,7 @@
           <el-menu-item index="3-3"><a href="/marketDetailEveryDay" class="nav-item">特定交易所历史每天交易量</a></el-menu-item>
         </el-submenu>
         <el-menu-item index="4"><a href="/accountDetail" class="nav-item">账户历史交易量详情</a></el-menu-item>
+        <el-menu-item index="5"><a href="/issueCoinInfluence" class="nav-item">发币影响</a></el-menu-item>
       </el-menu>
     </div>
     <div class="line"></div>

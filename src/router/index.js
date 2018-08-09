@@ -6,6 +6,7 @@ import MarketDetail from "@/components/MarketDetail"
 import MarketHistoryValue from "@/components/MarketHistoryValue"
 import AccountDetail from "@/components/AccountDetail"
 import MarketEveryDayValue from "@/components/MarketEveryDayValue"
+import IssueCoinInfluence from "@/components/IssueCoinInfluence"
 
 Vue.use(Router)
 
@@ -36,6 +37,10 @@ export default new Router({
       path: "/marketDetailEveryDay",
       name: "MarketDetailEveryDay",
       component: MarketEveryDayValue
+    }, {
+      path: "/issueCoinInfluence",
+      name: IssueCoinInfluence,
+      component: IssueCoinInfluence
     }
   ]
 })
