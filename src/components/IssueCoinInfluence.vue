@@ -58,6 +58,9 @@ export default {
       dateList: [{
         value: "2018-07-15",
         label: "2018-07-15"
+      }, {
+        value: "2018-08-15",
+        label: "2018-08-15"
       }],
       timStr: "",
       options: [{
