@@ -20,9 +20,9 @@
     <table>
       <thead>
         <tr>
-          <th>日期</th>
-          <th>流入量</th>
-          <th>流出量</th>
+          <th>日期(Datetime)</th>
+          <th>流入量(Inbound)</th>
+          <th>流出量(Outbound)</th>
         </tr>
       </thead>
       <tbody>

@@ -25,9 +25,10 @@
     <table>
       <thead>
         <tr>
-          <th>账户地址</th>
-          <th>流入量</th>
-          <th>流出量</th>
+          <th>账户地址(Addresses)</th>
+          <th>流入量(Inbound)</th>
+          <th>流出量(Outbound)</th>
+          <th>余额(Balances)</th>
         </tr>
       </thead>
       <tbody>
@@ -35,6 +36,7 @@
           <td>{{tx.Address}}</td>
           <td>{{tx.InValue}}</td>
           <td>{{tx.OutValue}}</td>
+          <td>{{tx.Balance}}</td>
         </tr>
       </tbody>
     </table>
@@ -69,10 +71,12 @@ export default {
         let address = obj[i].Address
         let inValue = obj[i].InValue
         let outValue = obj[i].OutValue
+        let balance = obj[i].Balance
         this.oneAddrDetail.push({
           Address: address,
           InValue: inValue,
-          OutValue: outValue
+          OutValue: outValue,
+          Balance: balance
         })
       }
     },
@@ -97,8 +101,8 @@ export default {
     },
     export2Excel: function () {
       require.ensure([], () => {
-        const tHeader = ["Address", "InValue", "OutValue"]
-        const filterVal = ["Address", "InValue", "OutValue"]
+        const tHeader = ["Address", "InValue", "OutValue", "Balance"]
+        const filterVal = ["Address", "InValue", "OutValue", "Balance"]
         const list = this.oneAddrDetail
         const data = this.formatJson(filterVal, list)
         exportJsonToExcel(tHeader, data, this.datetime)

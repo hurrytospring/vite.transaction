@@ -15,9 +15,9 @@
     <table>
       <thead>
         <tr>
-          <th>一级地址</th>
-          <th>流入量</th>
-          <th>流出量</th>
+          <th>一级地址(Addresses)</th>
+          <th>流入量(Inbound)</th>
+          <th>流出量(Outbound)</th>
         </tr>
       </thead>
       <tbody>

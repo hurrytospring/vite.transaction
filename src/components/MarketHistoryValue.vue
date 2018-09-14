@@ -13,9 +13,9 @@
     <table>
       <thead>
         <tr>
-          <th>交易所地址</th>
-          <th>流入总量</th>
-          <th>流出总量</th>
+          <th>交易所地址(Market Addresses)</th>
+          <th>流入总量(Inbound)</th>
+          <th>流出总量(Outbound)</th>
         </tr>
       </thead>
       <tbody>
