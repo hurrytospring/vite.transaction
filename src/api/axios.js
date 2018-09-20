@@ -2,7 +2,7 @@ import axios from "axios"
 import config from "./config"
 
 // if (process.server) {
-config.baseURL = `${location.protocol}//${location.host}/api`
+config.baseURL = `${location.protocol}//${location.host}/transApi`
 // }
 
 const service = axios.create(config)
