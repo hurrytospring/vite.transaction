@@ -12,7 +12,7 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js",
-    "deploy":"npm run build && rm -rf /var/www/viteTrans && mv -f ./dist /var/www/viteTrans"
+    "deploy": "npm run build && rm -rf /var/www/viteTrans && mv -f ./dist /var/www/viteTrans"
   },
   "dependencies": {
     "axios": "^0.18.0",
